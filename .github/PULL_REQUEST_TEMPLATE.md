@@ -5,6 +5,7 @@ Descreva de forma objetiva o que este PR entrega.
 
 ## Por que foi feito
 Explique brevemente o motivo da mudança (problema ou necessidade).
+Explique o motivo técnico ou de negócio.
 
 ## Como testar
 Passo a passo para validar este PR:
@@ -30,6 +31,10 @@ Marque o que se aplica:
 - [ ] Logs e auditoria ajustados (quando aplicável)
 - [ ] Nenhum segredo foi commitado
 - [ ] PR pequeno e focado (1 issue)
+- [ ] Build passa
+- [ ] Sem warnings críticos
+- [ ] Segue padrão do projeto
+- [ ] Issue relacionada vinculada
 
 ## Issue relacionada
 Fixes #
