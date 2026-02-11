@@ -1,53 +1,60 @@
-## Fundação e Infra
-1. [Infra] Criar estrutura base da solução SerTec
-2. [Infra] Adicionar .editorconfig
-3. [Infra] Adicionar global.json
-4. [Infra] Adicionar Directory.Build.props
-5. [Infra] Docker Compose base
-6. [Infra] compose.override.yml (dev)
-7. [Infra] CI com GitHub Actions
-8. [Infra] Branch protection
+# Backlog central do SerTec SaaS Starter
 
-## Tempo (Brasília)
-9. [Foundation] BrazilTimeProvider
+Este documento é a **lista-mãe** da fundação SaaS.
+Cada item deve ser convertido em issue (`Feature`, `Bug`, `Task` ou `Tech Debt`) antes de implementação.
 
-## Multi-tenant
-10. [Tenant] Entidade Tenant
-11. [Tenant] TenantId no JWT
-12. [Tenant] Filtro obrigatório por TenantId
-13. [Tenant] Testes anti-vazamento
-14. [Tenant] Admin API Tenants
+## Autenticação
 
-## Auth
-15. [Auth] Entidades User/Role
-16. [Auth] Migrations
-17. [Auth] Login JWT
-18. [Auth] Rate limit / lockout
-19. [Auth] Auditoria de login
-20. [Auth] Roles padrão
-21. [Auth] Forçar logout
-22. [Auth] Proteger Swagger
+- [ ] Login com JWT
+- [ ] Controle de roles/perfis
+- [ ] Lockout e rate limiting
+- [ ] Auditoria de autenticação
+- [ ] Proteção de endpoints administrativos
 
 ## Licenças
-23. [Licensing] Entidade License
-24. [Licensing] Expiração por data BRT
-25. [Licensing] Trial 2 dias
-26. [Licensing] PendingActivation
-27. [Licensing] ActivationCode
-28. [Admin] Criar Tenant + License
-29. [Admin] Alterar MaxSeats
-30. [Admin] Bloquear licença
-31. [TenantAdmin] Criar usuário
-32. [TenantAdmin] Ativar/desativar usuário
-33. [Job] Expiração automática
-34. [Auth] Negar acesso por licença
 
-## UI
-35. [UI] Layout base
-36. [UI] Login
-37. [UI] Primeiro login
-38. [UI] SuperMaster Tenants
-39. [UI] Criar cliente (WhatsApp)
-40. [UI] Gestão de usuários
+- [ ] Entidade de licença por tenant
+- [ ] Regras de trial inicial
+- [ ] Controle de seats máximos
+- [ ] Bloqueio por expiração
+- [ ] Fluxo de ativação e revogação
 
+## Multi-tenant
 
+- [ ] Entidade Tenant
+- [ ] TenantId obrigatório no contexto
+- [ ] Isolamento de dados por tenant
+- [ ] Testes anti-vazamento entre tenants
+- [ ] Administração de tenants
+
+## Infraestrutura
+
+- [ ] Estrutura inicial da solução (`src/` e `tests/`)
+- [ ] Docker Compose de desenvolvimento
+- [ ] Configuração de ambientes
+- [ ] Estratégia de migrações
+- [ ] Versionamento semântico e convenções de release
+
+## Observabilidade
+
+- [ ] Logging estruturado
+- [ ] Correlação por request/tenant
+- [ ] Métricas de saúde da aplicação
+- [ ] Tracing distribuído (quando aplicável)
+- [ ] Alertas mínimos operacionais
+
+## Segurança
+
+- [ ] Políticas de segredo e configuração segura
+- [ ] Validação e sanitização de entrada
+- [ ] Hardening de autenticação/autorização
+- [ ] Auditoria de eventos críticos
+- [ ] Revisão de dependências e vulnerabilidades
+
+## UI base (Blazor)
+
+- [ ] Layout base de aplicação
+- [ ] Tela de login
+- [ ] Shell administrativo inicial
+- [ ] Componentes reutilizáveis de formulário
+- [ ] Página padrão de erro e estados vazios

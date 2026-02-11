@@ -1,0 +1,43 @@
+name: "🧱 Tech Debt"
+description: "Débito técnico assumido conscientemente"
+title: "[Tech Debt]: "
+labels:
+  - tech-debt
+body:
+  - type: input
+    id: debt-summary
+    attributes:
+      label: Débito técnico
+      placeholder: "Ex.: Implementação temporária de cache sem invalidação robusta"
+    validations:
+      required: true
+  - type: textarea
+    id: why-debt
+    attributes:
+      label: Por que esse débito existe?
+      description: Contexto e decisão que levou ao débito.
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risco atual
+      description: Impacto provável se o débito não for tratado.
+    validations:
+      required: true
+  - type: textarea
+    id: payoff-plan
+    attributes:
+      label: Plano de quitação
+      description: Estratégia para remover o débito com segurança.
+      placeholder: |
+        - [ ] Etapa 1
+        - [ ] Etapa 2
+    validations:
+      required: true
+  - type: input
+    id: target-window
+    attributes:
+      label: Janela alvo
+      description: Sprint ou marco em que este débito deve ser tratado.
+      placeholder: "Ex.: Sprint 03 / Milestone Foundation"
