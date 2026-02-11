@@ -1,35 +1,21 @@
 ## O que foi feito
-Descreva de forma objetiva o que este PR entrega.
+Descreva objetivamente as mudanças entregues neste PR.
 - 
 - 
 
 ## Por que foi feito
-Explique brevemente o motivo da mudança (problema ou necessidade).
+Explique o problema, contexto ou objetivo desta mudança.
 
 ## Como testar
-Passo a passo para validar este PR:
+Passo a passo para validar este PR localmente:
 1. 
 2. 
 3. 
 
-## Impacto
-Marque o que se aplica:
-- [ ] Não afeta regras de autenticação/licença
-- [ ] Afeta autenticação
-- [ ] Afeta licenças / seats
-- [ ] Afeta multi-tenant (TenantId)
-- [ ] Afeta UI (Blazor)
-- [ ] Afeta banco de dados / migrations
-
-## Checklist obrigatório
-- [ ] Código compila localmente
-- [ ] Testes passam
-- [ ] Regras de licença respeitadas
-- [ ] Isolamento por TenantId preservado
-- [ ] Horário de Brasília respeitado (quando aplicável)
-- [ ] Logs e auditoria ajustados (quando aplicável)
-- [ ] Nenhum segredo foi commitado
-- [ ] PR pequeno e focado (1 issue)
-
-## Issue relacionada
-Fixes #
+## Checklist mínimo
+- [ ] A mudança está vinculada a uma issue
+- [ ] Escopo está focado e pequeno
+- [ ] Build local executa sem erros
+- [ ] Testes relevantes foram executados
+- [ ] Não há segredo/senha/token commitado
+- [ ] Atualizei documentação (quando aplicável)

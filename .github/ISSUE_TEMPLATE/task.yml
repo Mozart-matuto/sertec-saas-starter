@@ -1,0 +1,45 @@
+name: "🛠️ Task"
+description: "Tarefa técnica (infra, refatoração, configuração)"
+title: "[Task]: "
+labels:
+  - task
+body:
+  - type: input
+    id: objective
+    attributes:
+      label: Objetivo
+      placeholder: "Ex.: Padronizar configuração de build para todos os projetos"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo técnico
+      description: Quais mudanças técnicas serão realizadas?
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Justificativa
+      description: Por que esta task é necessária agora?
+    validations:
+      required: true
+  - type: textarea
+    id: done-criteria
+    attributes:
+      label: Definição de pronto
+      placeholder: |
+        - [ ] Item 1
+        - [ ] Item 2
+    validations:
+      required: true
+  - type: checkboxes
+    id: safeguards
+    attributes:
+      label: Salvaguardas
+      options:
+        - label: Validei impacto em segurança e isolamento multi-tenant
+        - label: Validei impacto em autenticação/licenciamento
+        - label: Não inclui escopo de negócio (usar Feature para isso)
+          required: true

@@ -1,0 +1,55 @@
+name: "🚀 Feature"
+description: "Nova funcionalidade de negócio"
+title: "[Feature]: "
+labels:
+  - feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Descreva claramente a funcionalidade. Tudo começa por issue e entra por PR.
+  - type: input
+    id: context
+    attributes:
+      label: Contexto
+      description: Qual problema de negócio essa feature resolve?
+      placeholder: "Ex.: Permitir gestão de licenças por tenant no painel admin"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo da entrega
+      description: Liste o que entra e o que não entra nessa issue.
+      placeholder: |
+        Entra:
+        -
+
+        Não entra:
+        -
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite
+      description: Defina critérios objetivos para considerar a issue concluída.
+      placeholder: |
+        - [ ] Critério 1
+        - [ ] Critério 2
+    validations:
+      required: true
+  - type: textarea
+    id: technical-notes
+    attributes:
+      label: Notas técnicas
+      description: Dependências, impactos em API/UI, migrações, segurança etc.
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: Revisei para garantir que esta issue é pequena e focada
+          required: true
+        - label: Entendo que a implementação deve vir via branch + PR
+          required: true

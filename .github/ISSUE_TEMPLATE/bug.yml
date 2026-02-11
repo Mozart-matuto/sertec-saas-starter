@@ -1,0 +1,62 @@
+name: "🐞 Bug"
+description: "Erro ou comportamento incorreto"
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Resumo do problema
+      placeholder: "Ex.: Login falha para tenants com licença ativa"
+    validations:
+      required: true
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Comportamento atual
+      description: O que está acontecendo hoje?
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Comportamento esperado
+      description: O que deveria acontecer?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidências
+      description: Logs, prints, stack trace, payloads (sem dados sensíveis).
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impacto
+      options:
+        - Baixo
+        - Médio
+        - Alto
+        - Crítico
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: Confirmei que não existe issue duplicada
+          required: true
+        - label: Incluí informações suficientes para reprodução
+          required: true
